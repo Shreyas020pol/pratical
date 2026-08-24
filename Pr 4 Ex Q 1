@@ -1,0 +1,19 @@
+print("*********** Order Tracking Simulation System ***********")
+
+status = input("Enter order status: ").lower().strip()
+
+if status == "shipped":
+    print("Order Status: Shipped")
+    print("Update: Your order has been shipped and is on the way.")
+
+elif status == "delivered":
+    print("Order Status: Delivered")
+    print("Update: Your order has been successfully delivered.")
+
+elif status == "pending":
+    print("Order Status: Pending")
+    print("Update: Your order is being processed and will be shipped soon.")
+
+else:
+    print(f"Invalid status: '{status}'")
+    print("Please enter shipped, delivered, or pending.")
