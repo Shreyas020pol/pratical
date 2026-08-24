@@ -1,0 +1,15 @@
+print("******** Smart Home Climate Monitor ********")
+
+while True:
+    temperature = float(input("Enter temperature (°C): "))
+
+    if temperature == -1:
+        print("Monitoring Stopped.")
+        break
+
+    if temperature > 30:
+        print("Recommendation: Turn ON AC ❄️")
+    elif temperature < 18:
+        print("Recommendation: Activate Heater 🔥")
+    else:
+        print("Recommendation: Idle Mode 😌")
