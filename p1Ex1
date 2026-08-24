@@ -1,0 +1,20 @@
+print("----- STUDENT MARKS INFORMATION ------")
+
+name = input("Enter student name :- ")
+subject1 = int(input("Enter marks for Subject 1 :- "))
+subject2 = int(input("Enter marks for Subject 2 :- "))
+subject3 = int(input("Enter marks for Subject 3 :- "))
+
+total = subject1 + subject2 + subject3
+average = total / 3
+
+print("\n----- STUDENT SCORECARD -----")
+
+print("Student name is :", name)
+print("Subject 1 marks :", subject1)
+print("Subject 2 marks :", subject2)
+print("Subject 3 marks :", subject3)
+print("Total marks is :", total)
+print("Average marks is :", round(average, 2))
+
+print("----- THANK YOU -----")
