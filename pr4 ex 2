@@ -1,15 +1,19 @@
-print("******** Smart Home Climate Monitor ********")
+print("*********** Smart Home Climate Monitoring System ***********")
 
-while True:
-    temperature = float(input("Enter temperature (°C): "))
+climate = input("Enter climate condition (hot/cold/normal): ").lower().strip()
 
-    if temperature == -1:
-        print("Monitoring Stopped.")
-        break
+if climate == "hot":
+    print("Climate is hot")
+    print("Recommendation: Turn ON AC")
 
-    if temperature > 30:
-        print("Recommendation: Turn ON AC ❄️")
-    elif temperature < 18:
-        print("Recommendation: Activate Heater 🔥")
-    else:
-        print("Recommendation: Idle Mode 😌")
+elif climate == "cold":
+    print("Climate is cold")
+    print("Recommendation: Activate Heater")
+
+elif climate == "normal":
+    print("Climate is normal")
+    print("Recommendation: Idle (No action needed)")
+
+else:
+    print(f"Invalid climate condition: '{climate}'")
+    print("Please enter hot, cold, or normal.")
