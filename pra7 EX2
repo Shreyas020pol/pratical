@@ -1,0 +1,10 @@
+paragraph = input("Enter a paragraph: ")
+
+words = paragraph.lower().split()
+python_count = 0
+
+for word in words:
+    if word == "python":
+        python_count += 1
+
+print("Python occurrences:", python_count)

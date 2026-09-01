@@ -1,0 +1,13 @@
+feedback = input("Enter customer feedback: ")
+
+feedback = feedback.strip()
+
+target_words = ["bad", "worst"]
+
+for word in target_words:
+    feedback = feedback.replace(word, "****")
+    feedback = feedback.replace(word.capitalize(), "****")
+
+print("\n----- MODERATED FEEDBACK -----")
+print("Feedback:", feedback)
+print("------------------------------")

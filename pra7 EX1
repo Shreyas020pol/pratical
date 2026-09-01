@@ -1,0 +1,17 @@
+paragraph = input("Enter a text block: ")
+
+at_count = 0
+dot_count = 0
+exclamation_count = 0
+
+for ch in paragraph:
+    if ch == "@":
+        at_count += 1
+    if ch == ".":
+        dot_count += 1
+    if ch == "!":
+        exclamation_count += 1
+
+print("@ symbols:", at_count)
+print(". symbols:", dot_count)
+print("! symbols:", exclamation_count)
